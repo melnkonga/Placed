@@ -1,0 +1,11 @@
+.navbar-item {
+  list-style: none;
+  cursor: pointer;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #ffffff;
+}
