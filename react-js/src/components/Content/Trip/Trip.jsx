@@ -5,6 +5,8 @@ import data from './data.js';
 import Modal from 'react-modal';
 import { BiMessageAlt } from 'react-icons/bi';
 import { SlPlane } from 'react-icons/sl';
+import { VscDebugStart } from 'react-icons/vsc';
+import { BsCalendarPlus } from 'react-icons/bs';
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
 const geoUrl = "/features.json";
@@ -26,7 +28,8 @@ const Trip = () => {
           title={trip.title}
           picture={trip.picture}
           startTripDate={trip.startTripDate}
-          endTripDate={trip.endTripDate} 
+          endTripDate={trip.endTripDate}
+          flagPicture={trip.flagPicture} 
     />
   );
 
@@ -78,8 +81,8 @@ const Trip = () => {
         </ComposableMap>
       </div>
       <div className="trip-action">
-        <button onClick={openModal} className="add-trip-button">Start</button>
-        <button onClick={openModal} className="add-trip-button">Plan</button>
+        <button onClick={openModal} className="add-trip-button"><VscDebugStart /></button>
+        <button onClick={openModal} className="add-trip-button"><BsCalendarPlus /></button>
       </div>
       <div className="trip-card-list">
         {tripsCardsList}

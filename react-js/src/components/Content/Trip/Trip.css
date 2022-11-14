@@ -9,29 +9,38 @@
 .trip-card-list {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .trip-action {
+    position: fixed;
+    text-align: center;
+    bottom: 15px;
+    left: 45%;
+    z-index: 99;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .add-trip-button {
-    min-width: 90px;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
     padding: 10px;
     background-color: #2471a3;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .ReactModal__Overlay {

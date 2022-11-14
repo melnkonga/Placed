@@ -4,7 +4,7 @@ import './Card.css';
 import { FaRegPaperPlane } from 'react-icons/fa';
 
 const Card = (props) => {
-    const { title, picture, startTripDate, endTripDate, likeCount, width, height } = props;
+    const { title, picture, flagPicture, startTripDate, endTripDate, likeCount, width, height } = props;
   return (
     <div 
         className="card" 
@@ -13,7 +13,7 @@ const Card = (props) => {
             height: height ?? 350 
             }}>
         <img src={picture} alt={title} className="card-picture" />
-        <h2>{title}</h2>
+        <h2>{title} <img width={20} src={flagPicture} alt="flag" /></h2>
         <p>{startTripDate} - {endTripDate}</p>
         <div className="flex-row gap-10">
             <FaRegPaperPlane className="cursor" />
@@ -28,6 +28,7 @@ export default Card;
 Card.propTypes = {
     title: Proptype.string.isRequired,
     picture: Proptype.string.isRequired,
+    flagPicture: Proptype.string.isRequired,
     startTripDate: Proptype.string.isRequired,
     endTripDate: Proptype.string,
     width: Proptype.string,
