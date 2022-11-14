@@ -10,8 +10,8 @@ const Navbar = () => {
   ];
   return (
     <div className="navbar">
-      {navbarItems.map((item) => (
-        <NavbarItem link={item.link} name={item.name} />
+      {navbarItems.map((item, index) => (
+        <NavbarItem key={index} link={item.link} name={item.name} />
       ))}
     </div>
   );

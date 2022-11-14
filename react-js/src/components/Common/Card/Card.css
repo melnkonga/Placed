@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 2vh 1vw 2vh 1vw;
+    border-radius: 5px;
+    color: #424949;
+    box-shadow: 1px 1px 8px #555;
+}
+
+.card:hover .card-picture {
+    opacity: 1;
+}
+
+.card-picture {
+    height: 220px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+    opacity: 0.9;
+}

@@ -6,3 +6,23 @@
 html {
   background-color: #e5e7e9;
 }
+
+.app-content {
+  margin-top: 20px;
+  padding: 2vh 2vw 2vh 2vw;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.gap-10 {
+  gap: 10px;
+}

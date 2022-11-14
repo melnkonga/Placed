@@ -9,10 +9,12 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/trip" element={<Trip />} />
-        </Routes>
+        <div className="app-content">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/trip" element={<Trip />} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );
